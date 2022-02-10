@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html>
-<meta charset="UTF-8">
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 <style>
 *{
     box-sizing: border-box;
@@ -31,11 +30,13 @@ body{
 }
 
 .main_body{
-    background-image: url("/images/background1.png");
+    background-image: url("background1.png");
 }
 
 .navi{
     background-color:rgb(94, 94, 94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .body_item_2_title{
     margin: auto;
@@ -129,7 +130,7 @@ body{
          <div class="navi">
             <div class="navi_title">
                 <a href="" class="navi_title_item">Home</a>
-                <a href="/Made/mades" class="navi_title_item">Made</a>
+                <a href="" class="navi_title_item">Made</a>
                 <a href="" class="navi_title_item">Other</a>
             </div>
          </div>
@@ -139,7 +140,7 @@ body{
                </div>
                <div class="body_item_2">
                   <div class="profileImg">
-                      <img src="/images/profile.png" class="profileImg_item">  
+                      <img src="profile.png" class="profileImg_item">  
                   </div>
                   <div class="body_item_2_title">
                       <span class="intro">환영합니다!</span>
