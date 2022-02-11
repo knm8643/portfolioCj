@@ -7,7 +7,7 @@ pageEncoding="UTF-8"%>
 <head>
 <meta charset="EUC-KR">
 <title>mades</title>
-<style>
+   <style>
         body{
             margin: 0%;
         }
@@ -17,7 +17,11 @@ pageEncoding="UTF-8"%>
         }
         
         .main_body{
-            background-image: url("background1.png");
+            color: white;
+            background-image: url("/images/background1.png");
+        }
+        .main_body_wrap{
+            line-height: 900%;
         }
         .navi{
             background-color:rgb(65, 31, 25);
@@ -51,6 +55,37 @@ pageEncoding="UTF-8"%>
            color: aqua;
            font-weight: 200;
         }
+        /* 캐러셀숨기기 */
+
+        #two{
+            display: none;
+        }
+        #three{
+            display: none;
+        }
+        .cal{
+            text-align: center;
+            height: 100px;
+            opacity:0.49;
+        }
+        /* 바디박스캐러셀 wrap */
+        .main_body_wrap{
+            text-align: center;
+            height: 600px;
+        }
+        /* 캐러셀버튼에 효과 */
+        #cal_item_1:hover{
+            cursor: pointer;
+            font-size: large;
+        }
+        #cal_item_2:hover{
+            cursor: pointer;
+            font-size: large;
+        }
+        #cal_item_3:hover{
+            cursor: pointer;
+            font-size: large;
+        }
         </style>
         </head>
         <body>
@@ -64,9 +99,43 @@ pageEncoding="UTF-8"%>
                     </div>
                  </div>
                  <div class="main_body">
-                     위치확인 캐러셀형식으로 내용추가
+                   <div class="main_body_wrap">
+                    <div id="first">
+                      <div class="first_item_box_1">
+                        <span class="first_item_1">저는 이런 기능을 사용했었습니다!</span>
+                      </div>
+                      <div class="first_item_box_2">
+                        <span class="first_item_2">로그인기능</span>
+                      </div>
+                    </div> 
+                    <div id="two">회원가입 보여주기</div>
+                    <div id="three">이메일로 찾기 보여주기</div>
+                   </div>  
+                    <div class="cal">
+                        <span id="cal_item_1">&#9898;</span>                        	
+                        <span id="cal_item_2">&#9898;</span>
+                        <span id="cal_item_3">&#9898;</span>
+                    </div> 
                  </div>
               </div>
-           </div>        
+           </div>
+           <script>
+           // 캐러셀 작동
+           $("#cal_item_1").on("click",function(){
+               $("#first").show();
+               $("#two").hide();
+               $("#three").hide();
+           })
+           $("#cal_item_2").on("click",function(){
+               $("#first").hide();
+               $("#two").show();
+               $("#three").hide();
+           })
+           $("#cal_item_3").on("click",function(){
+               $("#first").hide();
+               $("#two").hide();
+               $("#three").show();
+           })
+           </script>
         </body>
 </html>
