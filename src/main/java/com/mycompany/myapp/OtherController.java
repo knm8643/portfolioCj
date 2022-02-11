@@ -7,15 +7,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("Made")
-public class MadeController {
+@RequestMapping("other")
+public class OtherController {
 
 	@Autowired
 	private HttpSession session;
 	
-	@RequestMapping("mades")
+	@RequestMapping("others")
     public String Made() {
-		System.out.println("홈에서 Mades호출 확인");
-		return "/made/mades";
+		System.out.println("홈에서 other호출 확인");
+		return "/other/others";
 	}
 }

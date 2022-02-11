@@ -35,7 +35,8 @@ body{
 }
 
 .navi{
-    background-color:rgb(94, 94, 94);
+    background-color:rgb(65, 31, 25);
+    border-bottom: 10pt;
 }
 .body_item_2_title{
     margin: auto;
@@ -55,7 +56,9 @@ body{
 }
 /* 네비간 간격 */
 .navi_title_item{
-    margin-right: 3%;
+    font-size: 15pt;
+    margin-left: 3%;
+    margin-right: 6%;
 }
 /* 메인소개타이틀 */
 .body_item_1{
@@ -102,7 +105,7 @@ body{
     border-radius: 5%;
     background-color: white;
     border: 1px solid white;
-    width: 250px;
+    width: 230px;
     height: 30px;
 }
 .git{
@@ -128,9 +131,9 @@ body{
       <div class="main_wrap">
          <div class="navi">
             <div class="navi_title">
-                <a href="" class="navi_title_item">Home</a>
+                <a href="/" class="navi_title_item">Home</a>
                 <a href="/Made/mades" class="navi_title_item">Made</a>
-                <a href="" class="navi_title_item">Other</a>
+                <a href="/other/others" class="navi_title_item">Other</a>
             </div>
          </div>
          <div class="main_body">

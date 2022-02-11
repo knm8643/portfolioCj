@@ -8,6 +8,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/")
 	public String home() {
+	   System.out.println("사용자가 홈을 누름");
        return "home";
 	}
 	
