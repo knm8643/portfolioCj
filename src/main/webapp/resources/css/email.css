@@ -1,0 +1,34 @@
+.email_box{
+	margin: auto;
+    float: right;
+    width: 315px;
+    height: 320px;
+    background-color: white;
+    border-radius: 3%;
+    color: black
+}
+.three_item_box_1{
+    height: 100px;
+    line-height: 500%;
+}
+.email_wrap{
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#sendEmail{
+    width:30%;
+    height:50%;	
+}
+
+#emailNum_btn{
+    width:30%;
+    height:50%;	
+    	
+}
+
+.email_input{
+	line-height:100%;
+    text-align: left;
+    height: 15%;
+}

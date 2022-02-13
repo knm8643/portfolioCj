@@ -4,6 +4,13 @@ pageEncoding="UTF-8"%>
 <html>
 <meta charset="UTF-8">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/login.css">
 <head>
 	<title>Home</title>
 <style>
@@ -31,6 +38,7 @@ body{
 }
 
 .main_body{
+    height:850px;
     background-image: url("/images/background1.png");
 }
 
@@ -80,6 +88,7 @@ body{
 .body_item_2{
     margin: auto;
     text-align: center;
+    height: 500px;
     /* background-color:rgb(94, 94, 94);    */
 }
 /* 프로필사진 세부속성설정 */
@@ -145,7 +154,7 @@ body{
                       <img src="/images/profile.png" class="profileImg_item">  
                   </div>
                   <div class="body_item_2_title">
-                      <span class="intro">환영합니다!</span>
+                      <span class="intro">Welcome</span>
                       <div class="body_item_2_intro">
                          <div class="intro2">
                           저는 웹개발자가 되기 위해<br>
