@@ -30,6 +30,7 @@ a:hover{
 /* body보더조정 */
 body{
     margin: 0%;
+    background-image: url(/images/background1.png);
 }
 
 .main{

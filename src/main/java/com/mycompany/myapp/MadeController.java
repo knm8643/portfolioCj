@@ -18,4 +18,9 @@ public class MadeController {
 		System.out.println("홈에서 Mades호출 확인");
 		return "/made/mades";
 	}
+	
+	@RequestMapping("calendarDetail")
+	public String calendar(String title, String end, String start, String club_cl_name) {
+		return "/made/calendarDetail";
+	}
 }
